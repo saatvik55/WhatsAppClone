@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.compose.whatsapp_clone">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/_clone_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/_clone_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WhatsAppUI">
+        <activity
+            android:name="com.compose.whatsapp_clone.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WhatsAppUI.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.compose.whatsapp_clone.ui.chat.ChatActivity"
+            android:theme="@style/Theme.WhatsAppUI.NoActionBar" />
+    </application>
+
+</manifest>
